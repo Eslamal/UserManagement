@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_user_data">أدخل بيانات المستخدم</string>
+    <string name="user_name">الاسم</string>
+    <string name="age">العمر</string>
+    <string name="job_title">المسمى الوظيفي</string>
+    <string name="gender">النوع</string>
+    <string name="save">حفظ</string>
+    <string name="view_users">عرض المستخدمين</string>
+
+    <string name="users_list">قائمة المستخدمين</string>
+    <string name="user_details">تفاصيل المستخدم</string>
+
+    <string name="gender_male">ذكر</string>
+    <string name="gender_female">أنثى</string>
+    <string name="delete">حذف</string>
+    <string name="delete_all">حذف الكل</string>
+    <string name="save_changes">حفظ التغييرات</string>
+
+    <string name="delete_user_confirmation_title">تأكيد الحذف</string>
+    <string name="delete_user_confirmation_message">هل أنت متأكد أنك تريد حذف %1$s؟</string>
+    <string name="delete_all_users_confirmation_title">تأكيد حذف الكل</string>
+    <string name="delete_all_users_confirmation_message">هل أنت متأكد أنك تريد حذف جميع المستخدمين؟ لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="confirm">تأكيد</string>
+    <string name="cancel">إلغاء</string>
+
+
+</resources>
