@@ -1,4 +1,4 @@
-# MadarTask User Management App
+# User Management App
 A sample Android application demonstrating modern Android development practices. The app allows users to create, view, update, and delete user profiles, 
 with all data saved locally on the device. It is built entirely with Jetpack Compose and follows the MVVM architecture pattern.
 
