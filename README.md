@@ -1,24 +1,73 @@
-# User Management App
-A sample Android application demonstrating modern Android development practices. The app allows users to create, view, update, and delete user profiles, 
-with all data saved locally on the device. It is built entirely with Jetpack Compose and follows the MVVM architecture pattern.
+This project is a simple Android user management application built using Kotlin and Jetpack Compose, utilizing the Room Persistence Library for local data storage. The project demonstrates best practices in Android development, including MVVM architecture, UI state management, local data handling, and multi-language and dark mode support.
 
-## ✨ Features
-* **Create Users:** An input screen to enter user details including name, age, job title, and gender.
-* **View All Users:** A clean, scrollable list that displays all saved users.
-* **Edit User Details:** Click on any user in the list to navigate to a details screen where their information can be updated.
-* **Delete Users:**
-    * Delete a single user with a long-press gesture on the user card (with a confirmation dialog).
-    * Delete all users at once with a dedicated button (also with a confirmation dialog).
-* **Data Persistence:** User data is saved in a local Room database, so information is retained even after the app is closed.
-* **Multi-Language Support:** The app is fully localized for both English and Arabic, and can switch languages dynamically.
-* **Responsive & Modern UI:** The entire user interface is built with Jetpack Compose, using Material 3 design principles.
+Features
 
-  This project follows modern Android architecture guidelines and uses a collection of popular libraries.
+•
+Add New Users: Enter user details such as name, age, job title, and gender.
 
-* **UI:** Jetpack Compose
-* **Architecture:** Model-View-ViewModel (MVVM)
-* **Asynchronous Programming:** Kotlin Coroutines
-* **Database:** Room Persistence Library for local storage.
-* **Navigation:** Jetpack Navigation for Compose to handle screen transitions.
-* **State Management:** `ViewModel`, `StateFlow`, `collectAsState`, and `mutableStateOf` are used to manage UI state in a reactive way.
-* **Dependency Injection:** Manual Dependency Injection is used for simplicity to provide the `ViewModel` with its dependencies (`UserDao`, `SettingsManager`).
+•
+View User List: Display all stored users in a scrollable list.
+
+•
+Edit User Details: Update information for existing users.
+
+•
+Delete Users: Delete individual users or all users.
+
+•
+Multi-language Support: The application automatically adapts to the device's language (English and Arabic).
+
+•
+Automatic Dark/Light Mode: The application's appearance adapts to the system's dark or light mode.
+
+•
+Unit and UI Tests: Includes comprehensive tests to ensure code quality and correct behavior.
+
+Technologies Used
+
+•
+Kotlin: The primary programming language.
+
+•
+Jetpack Compose: A modern toolkit for building native Android UI.
+
+•
+Room Persistence Library: An abstraction layer over SQLite to facilitate local database operations.
+
+•
+ViewModel: For managing UI-related data in a lifecycle-aware manner.
+
+•
+LiveData / StateFlow: For observing data changes and automatically updating the UI.
+
+•
+Kotlin Coroutines: For managing asynchronous operations.
+
+•
+DataStore Preferences: For storing application settings (e.g., language).
+
+•
+Mockito: For unit testing.
+
+•
+Jetpack Compose Testing: For UI testing.
+
+Project Structure
+
+The project follows the MVVM (Model-View-ViewModel) architecture to ensure separation of concerns, testability, and maintainability. The main structure consists of:
+
+•
+data: Contains data models (Entities), Data Access Objects (DAOs), and the database class.
+
+•
+view: Contains UI screens (Composables).
+
+•
+viewmodel: Contains the ViewModel that handles business logic and provides data to the UI.
+
+•
+util / manager: Contains helper classes for managing settings and language.
+
+•
+test / androidTest: Contains unit tests and UI tests.
+
